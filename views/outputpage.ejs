@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body>
+
+    <h1 class="text-center" > Revenue Report</h1>
+        <div class="container">
+            <div class="jumbotron" >
+                <h3>Project Revenue Report</h3>
+        <table class="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Project Name</th>
+                <th scope="col">Estimation</th>
+                <th scope="col">Actual Revenue </th>
+                <th scope="col">Profit / Loss </th>
+            
+
+             
+              </tr>
+            </thead>
+            <tbody>
+                <% var i=1 %>
+                <% for(prods of profitList){ %>
+              <tr>
+                <th scope="row"><%= i %></th>
+                <td>  <%= prods.ProjectName%></td>
+                <td> ₹ <%= projectEstimation[i-1].Estimation+projectEstimation[i-1].OtherExpenses%></td>
+                <td> ₹ <%= fullRevenue[i-1].price%></td>
+                <td> ₹ <%= prods.Profit%></td>
+                
+              </tr>
+             <% i++} %>
+            </tbody>
+          </table>
+
+        </div>
+        
+    </div>
+   
+
+
+
+
+    <div class="container">
+        <div class="jumbotron" >
+            <h3>Employee Revenue Report</h3>
+            <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Revenue</th>
+                    <th scope="col">Project Name</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    <% var i=1 %>
+                    <% for(emplist of fulllist) { %>
+                  <tr>
+                    <th scope="row"><%= i %></th>
+                    <td><%= emplist.Name%></td>
+                    <td> ₹ <%= emplist.revenue%></td>
+                    <td><%= emplist.ProjectName%></td>
+                  </tr>
+                 <% i++} %>
+                </tbody>
+              </table>
+            </div>
+        
+        </div>
+        
+
+    
+   
+</body>
+</html>

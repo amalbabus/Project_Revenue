@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+</head>
+<body>
+    
+
+    <h1 class="text-center" >Revenue Calculator</h1>
+    <div class="container">
+        <div class="jumbotron" >
+    <form action="/calculator" method="post" enctype="multipart/form-data">
+        <div>
+            <h3>Upload Project Details</h3>
+            <input type="file" id="projectDetails" name="projectDetails">
+            <!-- <label class="form-label" for="projectDetails">Project File</label>
+       <input type="file" class="form-control" id="projectDetails" name="projectDetails"/> -->
+        </div>
+        <br>
+      <div>
+        <h3>Upload Employee Time Sheet</h3>
+        <input type="file" id="employeetime" name="employeetime">
+      </div>
+      <br>
+
+       <div>
+        <button type="submit"class="btn btn-primary" > Generate Revenue Report </button>
+       </div>
+
+     
+    </form>
+</div>
+</div>
+</body>
+</html>
