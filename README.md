@@ -5,3 +5,6 @@
 2) GoTo -----> http://localhost:3000/
 
 3) Upload the two files given in inputfiles folder
+
+
+View the sample input and output files for an overview
